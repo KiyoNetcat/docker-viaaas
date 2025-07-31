@@ -8,4 +8,4 @@ do
 done
 
 cd /app
-exec java -jar VIAaaS-all.jar $@
+exec java ${JVM_OPTS:} -jar VIAaaS-all.jar $@
