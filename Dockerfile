@@ -9,7 +9,7 @@ COPY /root /
 
 RUN apk add unzip
 WORKDIR /build
-ADD "https://nightly.link/ViaVersion/VIAaaS/workflows/gradle/master/Artifacts.zip" /build/Artifacts.zip
+ADD "https://nightly.link/ViaVersion/VIAaaS/workflows/build/master/Artifacts.zip" /build/Artifacts.zip
 RUN unzip Artifacts.zip
 
 WORKDIR /app
